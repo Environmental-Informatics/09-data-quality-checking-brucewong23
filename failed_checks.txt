@@ -1,0 +1,5 @@
+	Precip	Max Temp	Min Temp	Wind Speed
+1. No Data	2	2	2	0
+2. Gross Error	15	14	2	2
+3. Swapped	0	4	4	0
+4. Range	0	5	5	0
