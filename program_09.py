@@ -90,7 +90,7 @@ def Check04_TmaxTminRange( DataDF, ReplacedValuesDF ):
 #    total = sum(idx) # could be used to manually assign counts
 #    print('idx sum:', total)
     DataDF.loc[idx, ['Max Temp', 'Min Temp']] = np.nan # NaN assigned to cell according to index
-    ReplacedValuesDF.loc['4. Range'] = (DataDF.isna().sum() - ReplacedValuesDF[0:2].sum())
+    ReplacedValuesDF.loc['4. Range Fail'] = (DataDF.isna().sum() - ReplacedValuesDF[0:2].sum())
     # NaN is count is the first two steps (0:2), otherwise, total can be used again as in step 3
     return( DataDF, ReplacedValuesDF )
 
